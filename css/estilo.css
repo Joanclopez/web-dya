@@ -1,0 +1,61 @@
+@font-face {font-family: 'Gotham'; src: url('fuentes/Gotham-Book.woff') format('woff'); font-weight: normal; font-style: normal;}
+
+*{margin:0;padding:0;outline:none; font-family: "Gotham";}
+html{height:100%;overflow-x:hidden;}
+body{width:100%;overflow-x:hidden;}
+body, div, dl,dt,dd, ul,ol,li, h1,h2,h3,h4,h5,h6, pre, form,fieldset, input,textarea, a, p,blockquote, th,td{margin:0;padding:0;vertical-align:baseline;}
+a{text-decoration: none; color:rgb(0, 0, 0);}
+
+#contenedor{width:100%;;margin:0;padding:0;position:relative;}
+.escena{position:relative;width:100%;margin:0;padding:0;z-index:-1;}
+
+/* Fondos para las escenas */
+#introduccion{width:100%;background:linear-gradient(to right, rgb(199, 82, 96) 50%, rgb(188, 76, 93) 50%);margin:0;overflow:hidden;z-index: 1;}
+#cambiar{width:100%;background:linear-gradient(to right, rgb(248, 220, 95) 50%, rgb(239, 202, 89) 50%); margin:0;overflow:hidden;z-index: 2;}
+#sonador{width:100%;background:linear-gradient(to right, rgb(241, 136, 99) 50%, rgb(232, 126, 93) 50%); margin:0;overflow:hidden;z-index: 3;}
+#simbolo{width:100%;background:linear-gradient(to right, rgb(135, 121, 223) 50%, rgb(121, 99, 205) 50%); margin:0;overflow:hidden;}
+#bueno{width:100%;background:linear-gradient(to right, rgb(237, 251, 116) 50%, rgb(221, 237, 104) 50%); margin:0;overflow:hidden;}
+#persona{width:100%;background:linear-gradient(to right, rgb(177, 104, 187) 50%, rgb(160, 100, 181) 50%); margin:0;overflow:hidden;}
+#monstruos{width:100%;background:linear-gradient(to right, rgb(102, 211, 236) 50%, rgb(93, 199, 225) 50%); margin:0;overflow:hidden;}
+#tiempo{width:100%;background:linear-gradient(to right, rgb(183, 232, 105) 50%, rgb(169, 222, 96) 50%); margin:0;overflow:hidden;}
+#habilidades{width:100%;background:linear-gradient(to right, rgb(244, 121, 97) 50%, rgb(234, 111, 91) 50%); margin:0;overflow:hidden;}
+#mision{width:100%;background:linear-gradient(to right, rgb(105, 134, 232) 50%, rgb(96, 125, 221) 50%); margin:0;overflow:hidden;z-index:3;}
+
+
+/* Empezamos conlas escenas...
+	Escena introducción */
+#sol{position:fixed;width:15%;height:25%;top:20%;left:50%;background:transparent url(imagenes/sol.png) no-repeat 0 0; background-size:contain; z-index:1;}
+
+#sol-grande{position:fixed;width:18.1492%;height:33.4337%;top:0;left:40.9645%;background:transparent url(imagenes/sol.png)no-repeat 0 0;background-size:contain;z-index:1;} 
+#nave-completa{position:absolute;width:5.29%;height:16.3867%;top:80%;left:60%;background:transparent url(imagenes/nave_completa.png)no-repeat 0 0;;background-size:contain;z-index:2;}
+
+#ciudad-apagada{}
+#cable{}
+#sol-mediano{}
+#boton{}
+#hoyo-boton{}
+
+/* Escena monstruos */
+.nube-der-monstruo{}
+.nube-izq-monstruo{}
+.polvo-derc-monstruo{}
+.polvo-izq-monstruo{}
+#hoyo{position:absolute;width:21.96%;height:3.58%;top:10%;left:39%;background:transparent url(imagenes/hoyo.png) no-repeat 0 0;background-size:contain;z-index:3;}
+#monstruo{position:absolute;width:25.17%;height:37.65%;top:45%;left:37%;background:transparent url(imagenes/monstruo_vivo.png) no-repeat 0 0;background-size:contain;z-index:2;}
+#ciudad{position:absolute;width:43.18%;height:22.59%;top:63%;left:37%;background:transparent url(imagenes/ciudad_prendida.png) no-repeat 0 0;background-size:contain;z-index:3;}
+
+/* Escena final */
+#cabina{position:absolute;width:12.33%;height:40%;top:49.7%;left:43.5%;background:transparent url(imagenes/cabina.png) no-repeat 0 0;background-size:contain;z-index:1;}
+#final{position:absolute;width:665.67px;height:199.2px;top:70%;left:25%;background:transparent url(imagenes/final.png) no-repeat 0 0;background-size:contain;z-index:2;}
+/* No más escenas */
+
+
+#encabezado{width:100%;}
+#encabezado nav{width:80%;position:fixed;top:0;background:white;display:block;left:10%;height:3px;z-index:100;}
+#encabezado nav ul{margin:0;padding:0;list-style:none;}
+#encabezado nav ul li {display: inline-block; background: linear-gradient(to right, rgb(255, 255, 255) 50%, rgb(244, 244, 244) 50%); text-align: center;}
+
+#pie-pagina{width:100%;background:rgb(0, 130, 206);margin:0;height:100px;overflow:hidden;}
+
+.circulo-pequenio{width: 74px; height: 37px; border-radius: 0 0 74px 74px; position:relative; left:10%; line-height: 37px; margin-right: 1.5%; font-size: 12px;}
+.circulo-grande{width: 100px; height: 50px; border-radius: 0 0 100px 100px; position:absolute; left:calc(50% - 50px); line-height: 50px;}

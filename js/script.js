@@ -19,13 +19,6 @@ window.onscroll = function(evento) {
 	}
 		
 
-	if (evento.pageY > 2500)
-	{
-		document.querySelector("#sol").style.display = "inline";
-		document.querySelector("#sol").style.transform = "scale(2)";
-	}
-		
-
 	if (evento.pageY >= 1854)
 		document.querySelector("#nave-completa").style.top = "67%";
 
